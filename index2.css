@@ -1,0 +1,67 @@
+body {
+    background-image: url('p2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    
+    overflow: hidden;
+    padding: 50;
+    
+}
+#airplane {
+    position: fixed;
+
+    top: 10px;
+    right: 0;
+}
+
+#airplane img {
+    max-width: 300px; /* Adjust the size according to your needs */
+    transform: rotate(-15deg); /* Rotate the image 30 degrees counterclockwise */
+    /*offset-path: path("M10, 80,  q100, 120 120,20 q140,-50 160,0"); 
+    offset-anchor: center;*/
+    transition: transform 1s ease-in-out;
+
+    animation: motion 3s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.player {
+    position: absolute;
+    width: 42%;
+    bottom: -40px;
+    right:30%;
+    rotate: 0deg;
+   animation: rotate 5s ease-in-out infinite;
+    
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-2deg);
+  }
+  50% {
+    transform: rotateZ(2deg);
+  }
+  100% {
+    transform: rotateZ(-2deg);
+  }
+}
+
+.hand {
+    position: absolute;
+    width: 300px;
+    bottom: -20px;
+    left: 0px;
+}

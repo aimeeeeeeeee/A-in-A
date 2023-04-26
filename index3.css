@@ -1,0 +1,64 @@
+body {
+    background-image: url('b3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    height: auto;
+    
+}
+
+#airplane {
+    position: fixed;
+/*max-width: 500%;
+    max-height: 100%;*/
+    top: 50px;
+    right: 0;
+/*    offset-anchor: center;*/
+}
+
+#airplane img {
+    max-width: 300px; 
+    transform: rotate(-15deg); 
+    
+transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+.captain {
+    position: absolute;
+    width: 32%;
+    bottom: -3%;
+    right:2%;
+    rotate: 0deg;
+    animation: rotate 3s ease-in-out infinite;
+    
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(-3deg);
+  }
+  50% {
+    transform: rotateZ(3deg);
+  }
+  100% {
+    transform: rotateZ(-3deg);
+  }
+}
+
+.light {
+    position: absolute;
+    width: 38%;
+    bottom: -50px;
+    left: 0%;
+}

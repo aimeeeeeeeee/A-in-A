@@ -31,10 +31,10 @@ body {
 }
 
 .image-1{
-  width: 700px;
+  width: 500px;
   top:100px;
-  left: 400px;
-  opacity: 0.8;
+  left: 470px;
+  opacity: 1;
   position: absolute;
   animation-name: fly;
   animation-duration: 3s;
@@ -42,9 +42,8 @@ body {
 }
 .image-1:hover{
 	opacity: 0.9;
-	animation-name:fly1;
-	animation-duration: 1.5s;
-	animation-iteration-count: inherit;
+    animation: flyback 1s ease-in-out forwards;
+    animation-iteration-count: inherit;
 }
 
 @keyframes fly1{
@@ -60,10 +59,10 @@ body {
 }
 
 .image-2{
-  width: 500px;
+  width: 550px;
   top:400px;
   left: 150px;
-  opacity: 0.8;
+  opacity: 1;
   rotate: 0deg;
   position: absolute;
   animation-name: fly;
@@ -72,9 +71,21 @@ body {
 }
 .image-2:hover{
 	opacity: 0.9;
-	animation-name:fly2;
-	animation-duration: 2s;
-	animation-iteration-count: inherit;
+    animation: flyback 1s ease-in-out forwards;
+    animation-iteration-count: inherit;
+
+}
+
+@keyframes flyback {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg) translate(0, 50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(0, 0);
+  }
 }
 
 @keyframes fly2{
@@ -84,10 +95,10 @@ body {
 }
 
 .image-3{
-  width: 600px;
+  width: 550px;
   top:350px;
   left: 900px;
-  opacity: 0.8;
+  opacity: 1;
   position: absolute;
   animation-name: fly;
   animation-duration: 3s;
@@ -95,9 +106,8 @@ body {
 }
 .image-3:hover{
 	opacity: 0.9;
-	animation-name:fly3;
-	animation-duration: 2s;
-	animation-iteration-count: inherit;
+    animation: flyback 1s ease-in-out forwards;
+    animation-iteration-count: inherit;
 }
 @keyframes fly3{
 	0%{rotate:0deg}
