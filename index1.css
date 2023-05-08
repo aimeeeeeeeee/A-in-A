@@ -9,7 +9,19 @@ body {
     overflow: hidden;
     padding: 0;
 }
+@font-face{
+            font-family:caviar dream;
+            src: url('CaviarDreams.ttf');
+        }
 
+#text{
+    font-family:caviar dream;
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
 
 .airplane {
     position: absolute;

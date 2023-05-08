@@ -10,6 +10,27 @@ body {
     padding: 50;
     
 }
+@font-face{
+            font-family:caviar dream;
+            src: url('CaviarDreams.ttf');
+        }
+
+#text{
+    font-family:caviar dream;
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+#text1{
+    font-family:caviar dream;
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    top: 350px;
+    left: 850px;
+}
 #airplane {
     position: fixed;
 
